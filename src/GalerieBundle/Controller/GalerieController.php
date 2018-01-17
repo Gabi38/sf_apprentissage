@@ -26,6 +26,7 @@ class GalerieController extends Controller
 
 		$order = $request->query->get('order');
 		$categorie = $request->query->get('categorie');
+		$recherche = $request->query->get('recherche');
 
 		$page = $request->query->get('page');
 		if(!$page)
@@ -41,16 +42,34 @@ class GalerieController extends Controller
 			->getRepository('GalerieBundle:Categorie')
 			->findAll();
 
+		dump($recherche);
+
 		$em    = $this->get('doctrine.orm.entity_manager');
-		$dql   = "SELECT a FROM GalerieBundle:Galerie a";
+		$dql   = "SELECT a FROM GalerieBundle:Galerie a WHERE 1=1";
 
 		if($categorie)
 		{
-			$dql .= " WHERE a.categorie = :cat";
-			$query = $em->createQuery($dql)->setParameter('cat', "$categorie");
+			$dql .= " AND a.categorie = :cat";
+			if($recherche)
+			{
+				$dql .= " AND a.title LIKE :recherche ";
+				$query = $em->createQuery($dql)->setParameter('cat', "$categorie")->setParameter('recherche', "%$recherche%");
+			}
+			else
+				$query = $em->createQuery($dql)->setParameter('cat', "$categorie");
 		}
 		else
-			$query = $em->createQuery($dql);
+		{
+			if($recherche)
+			{
+				$dql .= " AND a.title LIKE :recherche ";
+				$query = $em->createQuery($dql)->setParameter('recherche', "%$recherche%");
+			}
+			else
+				$query = $em->createQuery($dql);
+		}
+
+		dump($dql);
 
 		$paginator  = $this->get('knp_paginator');
 		$pagination = $paginator->paginate(

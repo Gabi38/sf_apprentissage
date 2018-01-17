@@ -23,7 +23,13 @@
             <input type="submit" value="Filtrer">
         </form>
 
+        <br/><br/>
 
+        Rechercher sur le nom: <br/>
+        <form action="{{ path('galerie') }}">
+            <input type="text" name="recherche">
+            <input type="submit" value="Rechercher">
+        </form>
 
         <br><br>
         <table class="table table-bordered table-striped">

@@ -15,18 +15,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="1360">
+              <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="35" />
               <folding>
-                <element signature="e#2082#2717#0#PHP" expanded="false" />
-                <element signature="e#2720#3685#0#PHP" expanded="false" />
-                <element signature="e#3688#3929#0#PHP" expanded="false" />
-                <element signature="e#3932#4646#0#PHP" expanded="false" />
-                <element signature="e#4649#4977#0#PHP" expanded="false" />
-                <marker date="1516185176276" expanded="true" signature="1332:1369" ph="SELECT a FRO... GalerieBundle" />
+                <element signature="e#2543#3178#0#PHP" expanded="false" />
+                <element signature="e#3181#4146#0#PHP" expanded="false" />
+                <element signature="e#4149#4390#0#PHP" expanded="false" />
+                <element signature="e#4393#5107#0#PHP" expanded="false" />
+                <element signature="e#5110#5438#0#PHP" expanded="false" />
+                <marker date="1516187178390" expanded="true" signature="1403:1440" ph="SELECT a FRO... GalerieBundle" />
+                <marker date="1516187178390" expanded="true" signature="1403:1450" ph="SELECT a FRO... GalerieBundle" />
               </folding>
             </state>
           </provider>
@@ -42,7 +43,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategorieType.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CategorieType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/CategorieType.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -77,8 +78,8 @@
       <file leaf-file-name="manager.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+            <state relative-caret-position="288">
+              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -112,7 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addImage</find>
       <find>neme</find>
       <find>setFile</find>
       <find>Entity</find>
@@ -142,6 +142,7 @@
       <find>Commentaire</find>
       <find>isActive</find>
       <find>setEtat</find>
+      <find>$query</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -194,10 +195,10 @@
         <option value="$USER_HOME$/Downloads/Stepup_Intranet/conge/addConge.php" />
         <option value="$PROJECT_DIR$/src/ContactBundle/Service/Email.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Entity/Galerie.php" />
-        <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php" />
         <option value="$PROJECT_DIR$/web/script.js" />
+        <option value="$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php" />
+        <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig" />
       </list>
     </option>
   </component>
@@ -498,12 +499,12 @@
       <workItem from="1513861868875" duration="20282000" />
       <workItem from="1515055566433" duration="31157000" />
       <workItem from="1515399325949" duration="3230000" />
-      <workItem from="1515426173883" duration="105250000" />
+      <workItem from="1515426173883" duration="106693000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159919000" />
+    <option name="totallyTimeSpent" value="161362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -514,18 +515,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12790698" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,14 +563,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/collectionType/collectionType/ajouter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="41" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Nemera/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -1128,16 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="53" column="47" lean-forward="false" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1100">
@@ -1166,17 +1149,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        <state relative-caret-position="420">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/RechercheType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
           <folding>
-            <element signature="e#2082#2717#0#PHP" expanded="false" />
-            <element signature="e#2720#3685#0#PHP" expanded="false" />
-            <element signature="e#3688#3929#0#PHP" expanded="false" />
-            <element signature="e#3932#4646#0#PHP" expanded="false" />
-            <element signature="e#4649#4977#0#PHP" expanded="false" />
-            <marker date="1516185176276" expanded="true" signature="1332:1369" ph="SELECT a FRO... GalerieBundle" />
+            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1189,19 +1183,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/CategorieType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="58" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="35" />
+          <folding>
+            <element signature="e#2543#3178#0#PHP" expanded="false" />
+            <element signature="e#3181#4146#0#PHP" expanded="false" />
+            <element signature="e#4149#4390#0#PHP" expanded="false" />
+            <element signature="e#4393#5107#0#PHP" expanded="false" />
+            <element signature="e#5110#5438#0#PHP" expanded="false" />
+            <marker date="1516187178390" expanded="true" signature="1403:1440" ph="SELECT a FRO... GalerieBundle" />
+            <marker date="1516187178390" expanded="true" signature="1403:1450" ph="SELECT a FRO... GalerieBundle" />
+          </folding>
         </state>
       </provider>
     </entry>
