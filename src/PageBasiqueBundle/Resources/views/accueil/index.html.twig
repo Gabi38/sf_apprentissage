@@ -1,0 +1,18 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block body %}
+    <div id="wrapper">
+        <div id="container">
+            <div id="welcome">
+                <h1>Bienvenue sur l'accueil de ma Galerie</h1>
+
+                <p>Mon texte blabla d'accueil </p>
+
+                <a href="{{ path('galerie') }}">Accèder à la Galerie</a><br/>
+                <a href="{{ path('social') }}">Accèder à la page social</a><br/>
+                <a href="{{ path('contact') }}">Accèder à la page Contact</a><br/>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

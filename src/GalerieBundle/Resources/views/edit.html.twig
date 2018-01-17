@@ -1,0 +1,53 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block title %}Modifier une galerie{% endblock %}
+
+{% block body %}
+
+    <h1>Modifier une galerie</h1>
+
+    {{ form_start(form, {'attr': {novalidate: 'novalidate'}}) }}
+
+    <div class="form-group">
+        {{ form_label(form.title, "Titre *") }}
+        {{ form_errors(form.title) }}
+        {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.categorie, "Catégorie") }}
+        {{ form_errors(form.categorie) }}
+        {{ form_widget(form.categorie, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+
+    <div class="form-collection">
+        <h3>Gestion des images </h3>
+        <p class="collection-infos">
+            Poid maximum : 10Mo<br>
+            Format : jpg, jpeg, png<br>
+        </p>
+        <ul class="collection images"  data-prototype="{{ form_widget(form.images.vars.prototype)|e('html_attr') }}">
+            {# iterate over each existing tag and render its only field: name #}
+            {% for image in form.images %}
+                <li class="collection-line">
+                    {% if images[loop.index0].nom is defined %}
+                        <div class="form-image big">
+                            <img src="{{ asset('uploads/galeries/images/' ~ images[loop.index0].nom) }}" style="max-width: 500px">
+                        </div>
+                    {% endif %}
+
+                    {{ form_row(image.file) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div><br>
+
+    {{ form_end(form) }}
+
+
+
+
+    <br/><br><a href=" {{ path('galerie') }}">Retour à la galerie</a>
+
+{% endblock %}

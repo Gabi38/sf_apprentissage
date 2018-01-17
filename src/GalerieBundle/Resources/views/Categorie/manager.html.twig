@@ -1,0 +1,63 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block body %}
+
+    {{ form_start(form, {'attr': {novalidate: 'novalidate'}}) }}
+
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.nom, "Nom *") }}
+        {{ form_errors(form.nom) }}
+        {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    {{ form_rest(form) }}
+
+    {{ form_end(form) }}
+
+    <br><br><table width="600" border="1" class="table table-bordered table-striped">
+
+    <tr>
+        <th width="90%">Catégorie</th>
+        <th colspan="2" width="10%">Actions</th>
+    </tr>
+
+    {% for categorie in categories %}
+
+        <tr>
+
+            <td>
+                <p class="tableDate">Ajouté le {{ categorie.created|date("d/m/Y à H:i") }}</p>
+                {% if categorie.changed is not null %}
+                    <p class="tableDate">Modifié le {{ categorie.changed|date("d/m/Y à H:i") }}</p>
+                {% endif %}
+                <p><strong>{{ categorie.nom }}</strong></p>
+            </td>
+
+            <td>
+                <a href="{{ path('galeriecategorie_modifier',{'id': categorie.id})}}" title="Modifier la catégorie">Modifier</a>
+            </td>
+
+            <td>
+                {% if categorie.galeries|length == 0 %}
+                    <a href="{{ path('galeriecategorie_supprimer',{'id': categorie.id})}}" class="sweetDelete" title="Supprimer la catégorie" data-title="Supprimer la catégorie" data-text="êtes vous sur ?">Supprimer</a>
+                {%  else %}
+                    <p>NON</p>
+                {% endif %}
+            </td>
+        </tr>
+
+    {% else %}
+        <tr>
+            <td colspan="3">Aucune catégorie</td>
+        </tr>
+    {% endfor %}
+
+</table>
+
+
+    <br><br> <a href=" {{ path('galerie') }}">Retour a la Galerie</a>
+
+
+{% endblock %}

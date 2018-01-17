@@ -1,0 +1,64 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block title %}Galerie : {{ galerie.title }}{% endblock %}
+
+{% block body %}
+
+    <h1>Galerie : {{ galerie.title }} </h1>
+
+
+    {% for image in images %}
+        {% if images[loop.index0].nom is defined %}
+            <div class="form-image big" style="float: left;">
+                <a data-lightbox="lightbox" data-title="{{ images[loop.index0].nom }}" href="{{ asset('uploads/galeries/images/' ~ images[loop.index0].nom) }}"><img src="{{ asset('uploads/galeries/images/' ~ images[loop.index0].nom) }}" style="max-width: 500px"></a>
+            </div>
+        {% endif %}
+    {% endfor %}
+    <div style="clear:both;"></div>
+
+
+    <br><hr>
+    {% for commentaire in commentaires %}
+        {% if commentaires[loop.index0].utilisateur is defined %}
+            <div class="form-commentaire big" style="float: left;">
+                Utilisateur : {{ commentaires[loop.index0].utilisateur }} <br>
+                Message : {{ commentaires[loop.index0].message }}
+            </div><br/><br/><hr>
+        {% endif %}
+    {% endfor %}
+
+    <br/> <br>
+
+
+    {{ form_start(form, {'attr': {novalidate: 'novalidate'}}) }}
+
+    <div class="form-group">
+        {{ form_label(form.utilisateur, "Votre nom *") }}
+        {{ form_errors(form.utilisateur) }}
+        {{ form_widget(form.utilisateur, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.message, "Votre commentaire ") }}
+        {{ form_errors(form.message) }}
+        {{ form_widget(form.message, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    {{ form_end(form) }}
+
+
+    <br/><br/><br><a href=" {{ path('galerie') }}">Retour à la galerie</a>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <link href="{{ asset('lightbox/css/lightbox.css') }}" rel="stylesheet">
+    <script src="{{ asset('lightbox/js/lightbox.js') }}"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true
+        })
+    </script>
+{% endblock javascripts %}

@@ -1,0 +1,212 @@
+<?php
+
+namespace GalerieBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+use Cocur\Slugify\Slugify;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
+
+/**
+ * Galerie
+ *
+ * @ORM\Table(name="galerie")
+ * @ORM\Entity(repositoryClass="GalerieBundle\Repository\GalerieRepository")
+ * @ORM\HasLifecycleCallbacks
+ */
+class Galerie
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="created", type="datetimetz")
+     */
+    private $created;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="changed", type="datetimetz", nullable=true)
+     */
+    private $changed;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="title", type="string", length=255)
+     */
+    private $title;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="slug", type="text")
+     */
+    private $slug;
+
+	/**
+	 * @ORM\ManyToOne(targetEntity="GalerieBundle\Entity\Categorie", inversedBy="galeries")
+	 */
+	private $categorie;
+
+	public function __construct()
+	{
+		$this->created = new \DateTime();
+	}
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set created
+     *
+     * @param \DateTime $created
+     *
+     * @return Galerie
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Get created
+     *
+     * @return \DateTime
+     */
+    public function getCreated()
+    {
+        return $this->created;
+    }
+
+    /**
+     * Set changed
+     *
+     * @param \DateTime $changed
+     *
+     * @return Galerie
+     */
+    public function setChanged($changed)
+    {
+        $this->changed = $changed;
+
+        return $this;
+    }
+
+    /**
+     * Get changed
+     *
+     * @return \DateTime
+     */
+    public function getChanged()
+    {
+        return $this->changed;
+    }
+
+	/**
+	 * @ORM\PreUpdate()
+	 */
+	public function preChanged()
+	{
+		$this->changed = new \DateTime();
+	}
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Galerie
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return Galerie
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+	/**
+	 * @ORM\PrePersist()
+	 * @ORM\PreUpdate()
+	 */
+	public function preSlug()
+	{
+		$slugify = new Slugify();
+		$this->slug = $slugify->slugify($this->title);
+	}
+
+	/**
+	 * Set categorie
+	 *
+	 * @param \GalerieBundle\Entity\Categorie $categorie
+	 *
+	 * @return Galerie
+	 */
+	public function setCategorie(\GalerieBundle\Entity\Categorie $categorie = null)
+	{
+		$this->categorie = $categorie;
+		return $this;
+	}
+	/**
+	 * Get categorie
+	 *
+	 * @return \GalerieBundle\Entity\Categorie
+	 */
+	public function getCategorie()
+	{
+		return $this->categorie;
+	}
+}

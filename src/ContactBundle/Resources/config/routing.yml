@@ -1,0 +1,19 @@
+contact:
+    path:     /contact
+    defaults: { _controller: ContactBundle:Contact:contact }
+
+contact_manager:
+    path:     /admin/manager
+    defaults: { _controller: ContactBundle:Contact:manager }
+
+contact_voir:
+    path:     /admin/contact/voir/{id}
+    defaults: { _controller: ContactBundle:Contact:voir }
+    requirements:
+        id: \d+
+
+contact_delete:
+    path:     /admin/contact/delete/{id}
+    defaults: { _controller: ContactBundle:Contact:delete }
+    requirements:
+        id: \d+

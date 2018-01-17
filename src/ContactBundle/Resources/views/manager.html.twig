@@ -1,0 +1,47 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block body %}
+    <div id="wrapper">
+        <h1>Gestion des contacts</h1>
+
+        <br><br>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th width="5%">Id</th>
+                <th width="5%">Nom</th>
+                <th width="5%">Prénom</th>
+                <th width="10%">Email</th>
+                <th width="45%">Message</th>
+                <th width="25%">Actions</th>
+            </tr>
+
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.id }}</td>
+                    <td>{{ contact.nom }}</td>
+                    <td>{{ contact.prenom }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>{{ contact.message }}</td>
+                    <td>
+                        <a href="{{ path('contact_voir', { 'id': contact.id } ) }}">Voir</a>
+                        <a href="{{ path('contact_delete', {'id': contact.id } ) }}">Supprimer</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr><td colspan="4">Aucune contact</td></tr>
+            {% endfor %}
+
+        </table>
+        <br/>
+        <br/>
+
+        <br/><br/><br/>
+
+
+
+    </div>
+
+
+
+{% endblock %}
+

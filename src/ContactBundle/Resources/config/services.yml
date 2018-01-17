@@ -1,0 +1,4 @@
+services:
+    service.email:
+        class: ContactBundle\Service\Email
+        arguments: ["@mailer","@templating"]

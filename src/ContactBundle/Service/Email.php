@@ -1,0 +1,30 @@
+<?php
+
+namespace ContactBundle\Service;
+
+class Email{
+	private $mailer;
+	private $templating;
+	public function __construct(\Swift_Mailer $mailer, $templating)
+	{
+		$this->mailer = $mailer;
+		$this->templating = $templating;
+	}
+	public function sendMail($email)
+	{
+		$message = \Swift_Message::newInstance()
+			->setSubject('Bonjour')
+			->setFrom('noreply@colocarts.com')
+			->setTo($email)
+			->setBody(
+				$this->templating->render('ContactBundle:Mail:simple.html.twig', array(
+						'titre' => 'Formulaire de contact',
+						'contenu' => 'Votre formulaire a bien été envoyé'
+					)
+				),
+				'text/html'
+			);
+		$this->mailer->send($message);
+	}
+}
+?>

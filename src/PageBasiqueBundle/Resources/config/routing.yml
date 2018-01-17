@@ -1,0 +1,7 @@
+accueil:
+    path:     /
+    defaults: { _controller: PageBasiqueBundle:Page:index }
+
+social:
+    path:     /social
+    defaults: { _controller: PageBasiqueBundle:Page:pageSocial }

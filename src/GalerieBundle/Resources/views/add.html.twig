@@ -1,0 +1,35 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block title %}Ajouter une galerie{% endblock %}
+
+{% block body %}
+
+    <h1>Ajouter une galerie</h1>
+
+    {{ form_start(form, {'attr': {novalidate: 'novalidate'}}) }}
+
+    <div class="form-group">
+        {{ form_label(form.title, "Titre *") }}
+        {{ form_errors(form.title) }}
+        {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+
+    <div class="form-collection">
+        <h3>Gestion des images </h3>
+        <p class="collection-infos">
+            Poid maximum : 10Mo<br>
+            Format : jpg, jpeg, png<br>
+        </p>
+        <ul class="collection images"  data-prototype="{{ form_widget(form.images.vars.prototype)|e('html_attr') }}">
+            {# iterate over each existing tag and render its only field: name #}
+            {% for image in form.images %}
+                <li class="collection-line">{{ form_row(image.file) }}</li>
+            {% endfor %}
+        </ul>
+    </div><br>
+
+
+    {{ form_end(form) }}
+
+{% endblock %}

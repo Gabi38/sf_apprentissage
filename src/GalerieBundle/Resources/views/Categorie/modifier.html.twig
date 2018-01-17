@@ -1,0 +1,19 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block body %}
+
+    {{ form_start(form, {'attr': {novalidate: 'novalidate'}}) }}
+
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.nom, "Nom *") }}
+        {{ form_errors(form.nom) }}
+        {{ form_widget(form.nom, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    {{ form_rest(form) }}
+
+    {{ form_end(form) }}
+
+{% endblock %}

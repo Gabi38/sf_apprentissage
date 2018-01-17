@@ -1,0 +1,49 @@
+galerie:
+    path:     /admin/galerie
+    defaults: { _controller: GalerieBundle:Galerie:manager }
+
+galerie_add:
+    path:     /admin/galerie/add
+    defaults: { _controller: GalerieBundle:Galerie:add }
+
+galerie_edit:
+    path:     /admin/galerie/edit/{slug}/{id}
+    defaults: { _controller: GalerieBundle:Galerie:edit }
+    requirements:
+        slug: ([a-z-0-9]*)
+        id: \d+
+
+galerie_voir:
+    path:     /admin/galerie/voir/{slug}/{id}
+    defaults: { _controller: GalerieBundle:Galerie:edit }
+    requirements:
+        slug: ([a-z-0-9]*)
+        id: \d+
+
+galerie_delete:
+    path:     /admin/galerie/delete/{id}
+    defaults: { _controller: GalerieBundle:Galerie:delete }
+
+galerie_delete_image:
+    path:     /admin/galerie/image/delete/{id}
+    defaults: { _controller: GalerieBundle:Galerie:deleteImage }
+#Catégorie
+galeriecategorie_manager:
+    path:     /admin/galerie-categorie/manager
+    defaults: { _controller: GalerieBundle:Categorie:manager }
+
+galeriecategorie_ajouter:
+    path:     /admin/galerie-categorie/ajouter
+    defaults: { _controller: GalerieBundle:Categorie:ajouter }
+
+galeriecategorie_modifier:
+    path:     /admin/galerie-categorie/modifier/{id}
+    defaults: { _controller: GalerieBundle:Categorie:modifier }
+    requirements:
+        id: \d+
+
+galeriecategorie_supprimer:
+    path:     /admin/galerie-categorie/supprimer/{id}
+    defaults: { _controller: GalerieBundle:Categorie:supprimer }
+    requirements:
+        id: \d+

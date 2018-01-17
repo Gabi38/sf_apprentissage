@@ -1,0 +1,15 @@
+contact:
+    resource: "@ContactBundle/Resources/config/routing.yml"
+    prefix:   /
+
+galerie:
+    resource: "@GalerieBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+pagebasique:
+    resource: "@PageBasiqueBundle/Resources/config/routing.yml"
+    prefix:   /

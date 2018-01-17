@@ -1,0 +1,88 @@
+{% extends "PageBasiqueBundle::base.html.twig" %}
+
+{% block body %}
+    <div id="wrapper">
+        <h1>Gestion des galeries</h1>
+
+        Afficher : <br/>
+
+        {#<option value="{{ val.value }}" {{  form.country.vars.value == '' and key == 0 ? ' selected ' :(val.value == form.country.vars.value ? ' selected ' : '') }}>{{ val.label | trans }}</option>#}
+        <form action="{{ path('galerie') }}">
+            <select name="categorie" id="manager_categorie">
+                <option value="">Tous</option>
+                {% for key,categorie_list in categories %}
+                    {% if(categorie_list.id == categorie) %}
+                        <option value="{{ categorie_list.id }}" selected>{{ categorie_list.nom }}</option>
+                    {% else %}
+                        <option value="{{ categorie_list.id }}">{{ categorie_list.nom }}</option>
+                    {% endif %}
+
+                {% endfor %}
+            </select>
+
+            <input type="submit" value="Filtrer">
+        </form>
+
+
+
+        <br><br>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th width="5%">Id</th>
+                <th width="45%">Nom des galeries</th>
+                <th width="25%"><a href="{{ path('galerie', {'order': 'ASC', 'categorie': categorie, 'page': current_page } ) }}">&#9650;</a>Catégorie<a href="{{ path('galerie', {'order': 'DESC', 'categorie': categorie, 'page': current_page } ) }}">&#9660;</a></th>
+                <th width="25%">Actions</th>
+            </tr>
+
+            {% for galerie in galeries %}
+                <tr>
+                    <td>{{ galerie.id }}</td>
+                    <td>{{ galerie.title }}</td>
+                    <td>
+                        {% if galerie.categorie is not empty %}
+                            <p>{{ galerie.categorie.nom }}</p>
+                        {% endif %}
+                    </td>
+
+                    <td>
+                        <a href="{{ path('galerie_voir', {'slug': galerie.slug , 'id': galerie.id } ) }}">Voir</a>
+                        <a href="{{ path('galerie_edit', {'slug': galerie.slug , 'id': galerie.id } ) }}">Modifier</a>
+                        <a href="{{ path('galerie_delete', {'id': galerie.id } ) }}">Supprimer</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr><td colspan="4">Aucune galerie</td></tr>
+            {% endfor %}
+
+        </table>
+        <br/>
+        <br/>
+        Pagination :
+
+        {% if(current_page-1 >= 1) %}
+            <a href="{{ path('galerie', {'page': current_page-1, 'categorie': categorie, 'order': order } ) }}"> <  </a>
+        {% endif %}
+
+        {{ current_page }} /  {{ nb_page }}
+
+        {% if(current_page+1 <= nb_page) %}
+            <a href="{{ path('galerie', {'page': current_page+1, 'categorie': categorie, 'order': order } ) }}"> >  </a>
+        {% endif %}
+
+        <br/><br/><br/>
+        {# display navigation #}
+        <div class="navigation">
+            {{ knp_pagination_render(pagination) }}
+        </div>
+        <br/><br/><br/>
+
+        <a href=" {{ path('galerie_add') }}">Ajouter une nouvelle galerie</a><br/>
+        <a href=" {{ path('galeriecategorie_manager') }}">Gestion des catégories</a>
+
+
+    </div>
+
+
+
+{% endblock %}
+
