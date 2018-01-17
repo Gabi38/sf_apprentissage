@@ -8,7 +8,7 @@ namespace GalerieBundle\Repository;
  */
 class GalerieRepository extends \Doctrine\ORM\EntityRepository
 {
-	public function getAllGalerieByCategorie($order,$categorie,$page)
+	public function getAllGalerieByCategorie($order,$categorie,$page,$recherche)
 	{
 		$qb = $this->createQueryBuilder('a');
 
@@ -16,6 +16,8 @@ class GalerieRepository extends \Doctrine\ORM\EntityRepository
 			$qb->orderBy('a.categorie', $order);
 		if($categorie)
 			$qb->where('a.categorie = :cat')->setParameter('cat', "$categorie");
+		if($recherche)
+			$qb->where('a.title LIKE :recherche')->setParameter('recherche', "%$recherche%");
 
 		if($page)
 			$qb->setFirstResult(($page-1)*20)->setMaxResults(20);

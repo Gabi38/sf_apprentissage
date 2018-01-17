@@ -33,7 +33,7 @@ class GalerieController extends Controller
 			$page = 1;
 
 		$galeries = $this->getDoctrine()
-			->getRepository('GalerieBundle:Galerie')->getAllGalerieByCategorie($order,$categorie,$page);
+			->getRepository('GalerieBundle:Galerie')->getAllGalerieByCategorie($order,$categorie,$page,$recherche);
 
 		$nb_page = $this->getDoctrine()
 			->getRepository('GalerieBundle:Galerie')->getNbPageGalerie($categorie);

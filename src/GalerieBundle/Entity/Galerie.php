@@ -86,6 +86,7 @@ class Galerie
 		$this->created = new \DateTime();
 		$this->images = new ArrayCollection();
 		$this->commentaires = new ArrayCollection();
+		$this->etat = true;
 	}
 
     /**
