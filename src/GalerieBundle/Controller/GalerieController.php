@@ -13,6 +13,7 @@ use GalerieBundle\Form\ImageType;
 use GalerieBundle\Form\CommentaireType;
 
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 use Symfony\Component\HttpFoundation\File\File;
 
@@ -137,7 +138,6 @@ class GalerieController extends Controller
 		);
 	}
 
-
 	public function deleteAction(Galerie $galerie)
 	{
 		// operation de suppression.
@@ -172,6 +172,20 @@ class GalerieController extends Controller
 		);
 	}
 
+	public function publicationAction(Request $request, Galerie $galerie){
+
+		if($request->isXmlHttpRequest()){
+
+			$state = $galerie->reverseState();
+			$galerie->setEtat($state);
+
+			$em = $this->getDoctrine()->getManager();
+			$em->persist($galerie);
+			$em->flush();
+
+			return new JsonResponse(array('state' => $state));
+		}
+	}
 
 
 

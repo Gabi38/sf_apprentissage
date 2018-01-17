@@ -20,9 +20,17 @@ galerie_voir:
         slug: ([a-z-0-9]*)
         id: \d+
 
+galerie_publication:
+    path:     /admin/galerie/publication/{id}
+    defaults: { _controller: GalerieBundle:Galerie:publication }
+    requirements:
+        id: \d+
+
 galerie_delete:
     path:     /admin/galerie/delete/{id}
     defaults: { _controller: GalerieBundle:Galerie:delete }
+    requirements:
+        id: \d+
 
 galerie_delete_image:
     path:     /admin/galerie/image/delete/{id}
@@ -31,10 +39,14 @@ galerie_delete_image:
 galeriecategorie_manager:
     path:     /admin/galerie-categorie/manager
     defaults: { _controller: GalerieBundle:Categorie:manager }
+    requirements:
+        id: \d+
 
 galeriecategorie_ajouter:
     path:     /admin/galerie-categorie/ajouter
     defaults: { _controller: GalerieBundle:Categorie:ajouter }
+    requirements:
+        id: \d+
 
 galeriecategorie_modifier:
     path:     /admin/galerie-categorie/modifier/{id}

@@ -73,6 +73,14 @@ class Galerie
 	 */
 	private $commentaires;
 
+	/**
+	 * @var string
+	 *
+	 * @ORM\Column(name="etat", type="boolean", options={"default" : 1})
+	 */
+	private $etat;
+
+
 	public function __construct()
 	{
 		$this->created = new \DateTime();
@@ -298,6 +306,31 @@ class Galerie
 	public function getCommentaires()
 	{
 		return $this->commentaires;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getEtat()
+	{
+		return $this->etat;
+	}
+
+	/**
+	 * @param string $etat
+	 */
+	public function setEtat($etat)
+	{
+		$this->etat = $etat;
+	}
+
+	/**
+	 * Retourne 1 si actif 0 si pas actif
+	 */
+	public function reverseState()
+	{
+		$etat = $this->getEtat();
+		return !$etat;
 	}
 
 
