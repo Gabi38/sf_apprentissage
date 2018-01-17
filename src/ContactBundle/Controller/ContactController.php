@@ -56,7 +56,7 @@ class ContactController extends Controller
 			$manager->persist($contact);
 			$manager->flush();
 
-			$this->get('service.email')->sendMail('gabriel@colocarts.com');
+			$this->get('service.email')->sendMail('gabriel@colocarts.com',$contact);
 
 			$request->getSession()
 				->getFlashBag()

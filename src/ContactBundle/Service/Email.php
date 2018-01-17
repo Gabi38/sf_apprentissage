@@ -10,7 +10,7 @@ class Email{
 		$this->mailer = $mailer;
 		$this->templating = $templating;
 	}
-	public function sendMail($email)
+	public function sendMail($email, $contact)
 	{
 		$message = \Swift_Message::newInstance()
 			->setSubject('Bonjour')
@@ -19,7 +19,7 @@ class Email{
 			->setBody(
 				$this->templating->render('ContactBundle:Mail:simple.html.twig', array(
 						'titre' => 'Formulaire de contact',
-						'contenu' => 'Votre formulaire a bien été envoyé'
+						'contenu' => 'Votre formulaire a bien été envoyé <br>'.$contact->getNom().'<br>'.$contact->getPrenom().'<br>'.$contact->getEmail().'<br>'.$contact->getMessage()
 					)
 				),
 				'text/html'
