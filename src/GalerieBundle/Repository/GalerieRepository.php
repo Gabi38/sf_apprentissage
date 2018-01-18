@@ -20,19 +20,20 @@ class GalerieRepository extends \Doctrine\ORM\EntityRepository
 			$qb->where('a.title LIKE :recherche')->setParameter('recherche', "%$recherche%");
 
 		if($page)
-			$qb->setFirstResult(($page-1)*20)->setMaxResults(20);
+			$qb->setFirstResult(($page-1)*3)->setMaxResults(3);
 
 		return $query = $qb->getQuery()->getResult();
 	}
 
-	public function getNbPageGalerie($categorie)
+	public function getNbPageGalerie($categorie,$recherche)
 	{
 		$qb = $this->createQueryBuilder('a');
 		$qb->select('COUNT(a)');
 
 		if($categorie)
 			$qb->where('a.categorie = :cat')->setParameter('cat', "$categorie");
-
+		if($recherche)
+			$qb->where('a.title LIKE :recherche')->setParameter('recherche', "%$recherche%");
 
 		return $query = $qb->getQuery()->getResult();
 	}

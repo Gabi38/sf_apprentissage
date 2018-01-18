@@ -36,13 +36,11 @@ class GalerieController extends Controller
 			->getRepository('GalerieBundle:Galerie')->getAllGalerieByCategorie($order,$categorie,$page,$recherche);
 
 		$nb_page = $this->getDoctrine()
-			->getRepository('GalerieBundle:Galerie')->getNbPageGalerie($categorie);
+			->getRepository('GalerieBundle:Galerie')->getNbPageGalerie($categorie,$recherche);
 
 		$categories = $this->getDoctrine()
 			->getRepository('GalerieBundle:Categorie')
 			->findAll();
-
-		dump($recherche);
 
 		$em    = $this->get('doctrine.orm.entity_manager');
 		$dql   = "SELECT a FROM GalerieBundle:Galerie a WHERE 1=1";
@@ -69,24 +67,23 @@ class GalerieController extends Controller
 				$query = $em->createQuery($dql);
 		}
 
-		dump($dql);
-
 		$paginator  = $this->get('knp_paginator');
 		$pagination = $paginator->paginate(
 			$query, /* query NOT result */
 			$request->query->getInt('page', $page)/*page number*/,
-			20/*limit per page*/
+			3/*limit per page*/
 		);
 
 		return $this->render('GalerieBundle::manager.html.twig', array(
 			'galeries' => $galeries,
 			'form' => $form->createView(),
 			'categories' => $categories,
-			'nb_page' => ceil($nb_page[0][1] / 20),
+			'nb_page' => ceil($nb_page[0][1] / 3),
 			'current_page' => $page,
 			'categorie'=> $categorie,
 			'order' => $order,
-			'pagination' => $pagination
+			'pagination' => $pagination,
+			'recherche' => $recherche
 		));
 	}
 

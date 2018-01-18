@@ -26,7 +26,7 @@
         <br/><br/>
 
         Rechercher sur le nom: <br/>
-        <form action="{{ path('galerie') }}">
+        <form action="{{ path('galerie', {'order': order, 'categorie': categorie, 'page': current_page } ) }}">
             <input type="text" name="recherche">
             <input type="submit" value="Rechercher">
         </form>
@@ -36,7 +36,7 @@
             <tr>
                 <th width="5%">Id</th>
                 <th width="40%">Nom des galeries</th>
-                <th width="25%"><a href="{{ path('galerie', {'order': 'ASC', 'categorie': categorie, 'page': current_page } ) }}">&#9650;</a>Catégorie<a href="{{ path('galerie', {'order': 'DESC', 'categorie': categorie, 'page': current_page } ) }}">&#9660;</a></th>
+                <th width="25%"><a href="{{ path('galerie', {'order': 'ASC', 'categorie': categorie, 'page': current_page, 'recherche': recherche } ) }}">&#9650;</a>Catégorie<a href="{{ path('galerie', {'order': 'DESC', 'categorie': categorie, 'page': current_page, 'recherche': recherche } ) }}">&#9660;</a></th>
                 <th width="25%">Actions</th>
                 <th width="5%">Etat</th>
             </tr>
@@ -74,13 +74,13 @@
         Pagination :
 
         {% if(current_page-1 >= 1) %}
-            <a href="{{ path('galerie', {'page': current_page-1, 'categorie': categorie, 'order': order } ) }}"> <  </a>
+            <a href="{{ path('galerie', {'page': current_page-1, 'categorie': categorie, 'order': order, 'recherche': recherche } ) }}"> <  </a>
         {% endif %}
 
         {{ current_page }} /  {{ nb_page }}
 
         {% if(current_page+1 <= nb_page) %}
-            <a href="{{ path('galerie', {'page': current_page+1, 'categorie': categorie, 'order': order } ) }}"> >  </a>
+            <a href="{{ path('galerie', {'page': current_page+1, 'categorie': categorie, 'order': order, 'recherche': recherche } ) }}"> >  </a>
         {% endif %}
 
         <br/><br/><br/>
@@ -91,7 +91,9 @@
         <br/><br/><br/>
 
         <a href=" {{ path('galerie_add') }}">Ajouter une nouvelle galerie</a><br/>
-        <a href=" {{ path('galeriecategorie_manager') }}">Gestion des catégories</a>
+        <a href=" {{ path('galeriecategorie_manager') }}">Gestion des catégories</a><br/><br/>
+
+        <a href=" {{ path('accueil') }}">Retour à l'accueil</a><br/>
 
 
     </div>

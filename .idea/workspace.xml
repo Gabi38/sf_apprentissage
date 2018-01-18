@@ -15,20 +15,30 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="357">
+              <caret line="38" column="92" lean-forward="false" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
               <folding>
-                <element signature="e#2543#3178#0#PHP" expanded="false" />
-                <element signature="e#3181#4146#0#PHP" expanded="false" />
-                <element signature="e#4149#4390#0#PHP" expanded="false" />
-                <element signature="e#4393#5107#0#PHP" expanded="false" />
-                <element signature="e#5110#5438#0#PHP" expanded="false" />
-                <marker date="1516187178390" expanded="true" signature="1403:1440" ph="SELECT a FRO... GalerieBundle" />
-                <marker date="1516187178390" expanded="true" signature="1403:1450" ph="SELECT a FRO... GalerieBundle" />
+                <marker date="1516264140725" expanded="true" signature="1404:1441" ph="SELECT a FRO... GalerieBundle" />
+                <marker date="1516264140725" expanded="true" signature="1404:1451" ph="SELECT a FRO... GalerieBundle" />
+                <marker date="1516264140725" expanded="false" signature="2600:3192" ph="{...}" />
+                <marker date="1516264140725" expanded="false" signature="3257:4160" ph="{...}" />
+                <marker date="1516264140725" expanded="false" signature="4209:4404" ph="{...}" />
+                <marker date="1516264140725" expanded="false" signature="4469:5121" ph="{...}" />
+                <marker date="1516264140725" expanded="false" signature="5194:5451" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GalerieRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,8 +66,8 @@
       <file leaf-file-name="GalerieType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
+            <state relative-caret-position="380">
+              <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -67,19 +77,65 @@
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Entity/Galerie.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="445">
-              <caret line="333" column="5" lean-forward="false" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
+              <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
               <folding>
                 <element signature="e#40#72#0#PHP" expanded="true" />
+                <marker date="1516263409819" expanded="true" signature="1754:1906" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="1915:1961" ph=" Get id ..." />
+                <marker date="1516263409819" expanded="true" signature="1991:2029" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2038:2133" ph=" Set created ..." />
+                <marker date="1516263409819" expanded="true" signature="2176:2246" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2255:2312" ph=" Get created ..." />
+                <marker date="1516263409819" expanded="true" signature="2347:2390" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2399:2494" ph=" Set changed ..." />
+                <marker date="1516263409819" expanded="true" signature="2537:2607" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2616:2673" ph=" Get changed ..." />
+                <marker date="1516263409819" expanded="true" signature="2708:2751" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2757:2781" ph=" @ORM\PreUpdate() ..." />
+                <marker date="1516263409819" expanded="true" signature="2813:2855" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="2864:2952" ph=" Set title ..." />
+                <marker date="1516263409819" expanded="true" signature="2991:3057" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3066:3118" ph=" Get title ..." />
+                <marker date="1516263409819" expanded="true" signature="3151:3192" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3201:3287" ph=" Set slug ..." />
+                <marker date="1516263409819" expanded="true" signature="3324:3388" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3397:3448" ph=" Get slug ..." />
+                <marker date="1516263409819" expanded="true" signature="3480:3520" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3526:3572" ph=" @ORM\PrePersist() ..." />
+                <marker date="1516263409819" expanded="true" signature="3601:3684" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3690:3793" ph=" Set categorie ..." />
+                <marker date="1516263409819" expanded="true" signature="3876:3931" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="3936:4005" ph=" Get categorie ..." />
+                <marker date="1516263409819" expanded="true" signature="4039:4072" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4110:4168" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4174:4265" ph=" Add image ..." />
+                <marker date="1516263409819" expanded="true" signature="4329:4380" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4386:4456" ph=" Remove image ..." />
+                <marker date="1516263409819" expanded="true" signature="4523:4569" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4575:4649" ph=" Get images ..." />
+                <marker date="1516263409819" expanded="true" signature="4680:4710" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4716:4825" ph=" Add commentaire ..." />
+                <marker date="1516263409819" expanded="true" signature="4907:4970" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="4976:5064" ph=" Remove commentaire ..." />
+                <marker date="1516263409819" expanded="true" signature="5149:5207" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="5213:5293" ph=" Get commentaires ..." />
+                <marker date="1516263409819" expanded="true" signature="5330:5366" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="5372:5394" ph=" @return string ..." />
+                <marker date="1516263409819" expanded="true" signature="5423:5451" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="5457:5484" ph=" @param string $etat ..." />
+                <marker date="1516263409819" expanded="true" signature="5518:5547" ph="{...}" />
+                <marker date="1516263409819" expanded="true" signature="5553:5595" ph=" Retourne 1 si actif 0 si pas actif ..." />
+                <marker date="1516263409819" expanded="true" signature="5629:5680" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manager.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="manager.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+            <state relative-caret-position="548">
+              <caret line="95" column="68" lean-forward="true" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -170,7 +226,6 @@
         <option value="$PROJECT_DIR$/../Nemera/index.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/views/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Repository/ImageRepository.php" />
-        <option value="$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$DRa0.307/lightbox2-master/examples/index.html" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Repository/CommentaireRepository.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Entity/Commentaire.php" />
@@ -198,6 +253,7 @@
         <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/web/script.js" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php" />
+        <option value="$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig" />
       </list>
     </option>
@@ -362,6 +418,28 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Repository" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GalerieBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -499,12 +577,12 @@
       <workItem from="1513861868875" duration="20282000" />
       <workItem from="1515055566433" duration="31157000" />
       <workItem from="1515399325949" duration="3230000" />
-      <workItem from="1515426173883" duration="106693000" />
+      <workItem from="1515426173883" duration="108169000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161362000" />
+    <option name="totallyTimeSpent" value="162838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -512,7 +590,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21979167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12790698" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13002114" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -643,14 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="45" column="4" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1132,9 +1202,55 @@
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Entity/Galerie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
-          <caret line="333" column="5" lean-forward="false" selection-start-line="333" selection-start-column="5" selection-end-line="333" selection-end-column="5" />
+          <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
           <folding>
             <element signature="e#40#72#0#PHP" expanded="true" />
+            <marker date="1516263409819" expanded="true" signature="1754:1906" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="1915:1961" ph=" Get id ..." />
+            <marker date="1516263409819" expanded="true" signature="1991:2029" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2038:2133" ph=" Set created ..." />
+            <marker date="1516263409819" expanded="true" signature="2176:2246" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2255:2312" ph=" Get created ..." />
+            <marker date="1516263409819" expanded="true" signature="2347:2390" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2399:2494" ph=" Set changed ..." />
+            <marker date="1516263409819" expanded="true" signature="2537:2607" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2616:2673" ph=" Get changed ..." />
+            <marker date="1516263409819" expanded="true" signature="2708:2751" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2757:2781" ph=" @ORM\PreUpdate() ..." />
+            <marker date="1516263409819" expanded="true" signature="2813:2855" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="2864:2952" ph=" Set title ..." />
+            <marker date="1516263409819" expanded="true" signature="2991:3057" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3066:3118" ph=" Get title ..." />
+            <marker date="1516263409819" expanded="true" signature="3151:3192" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3201:3287" ph=" Set slug ..." />
+            <marker date="1516263409819" expanded="true" signature="3324:3388" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3397:3448" ph=" Get slug ..." />
+            <marker date="1516263409819" expanded="true" signature="3480:3520" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3526:3572" ph=" @ORM\PrePersist() ..." />
+            <marker date="1516263409819" expanded="true" signature="3601:3684" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3690:3793" ph=" Set categorie ..." />
+            <marker date="1516263409819" expanded="true" signature="3876:3931" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="3936:4005" ph=" Get categorie ..." />
+            <marker date="1516263409819" expanded="true" signature="4039:4072" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4110:4168" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4174:4265" ph=" Add image ..." />
+            <marker date="1516263409819" expanded="true" signature="4329:4380" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4386:4456" ph=" Remove image ..." />
+            <marker date="1516263409819" expanded="true" signature="4523:4569" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4575:4649" ph=" Get images ..." />
+            <marker date="1516263409819" expanded="true" signature="4680:4710" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4716:4825" ph=" Add commentaire ..." />
+            <marker date="1516263409819" expanded="true" signature="4907:4970" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="4976:5064" ph=" Remove commentaire ..." />
+            <marker date="1516263409819" expanded="true" signature="5149:5207" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="5213:5293" ph=" Get commentaires ..." />
+            <marker date="1516263409819" expanded="true" signature="5330:5366" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="5372:5394" ph=" @return string ..." />
+            <marker date="1516263409819" expanded="true" signature="5423:5451" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="5457:5484" ph=" @param string $etat ..." />
+            <marker date="1516263409819" expanded="true" signature="5518:5547" ph="{...}" />
+            <marker date="1516263409819" expanded="true" signature="5553:5595" ph=" Retourne 1 si actif 0 si pas actif ..." />
+            <marker date="1516263409819" expanded="true" signature="5629:5680" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1149,36 +1265,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="34" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/RechercheType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Entity/Categorie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1191,18 +1281,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="27" column="17" lean-forward="false" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Entity/Categorie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="38" column="92" lean-forward="false" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
           <folding>
-            <element signature="e#2543#3178#0#PHP" expanded="false" />
-            <element signature="e#3181#4146#0#PHP" expanded="false" />
-            <element signature="e#4149#4390#0#PHP" expanded="false" />
-            <element signature="e#4393#5107#0#PHP" expanded="false" />
-            <element signature="e#5110#5438#0#PHP" expanded="false" />
-            <marker date="1516187178390" expanded="true" signature="1403:1440" ph="SELECT a FRO... GalerieBundle" />
-            <marker date="1516187178390" expanded="true" signature="1403:1450" ph="SELECT a FRO... GalerieBundle" />
+            <marker date="1516264140725" expanded="true" signature="1404:1441" ph="SELECT a FRO... GalerieBundle" />
+            <marker date="1516264140725" expanded="true" signature="1404:1451" ph="SELECT a FRO... GalerieBundle" />
+            <marker date="1516264140725" expanded="false" signature="2600:3192" ph="{...}" />
+            <marker date="1516264140725" expanded="false" signature="3257:4160" ph="{...}" />
+            <marker date="1516264140725" expanded="false" signature="4209:4404" ph="{...}" />
+            <marker date="1516264140725" expanded="false" signature="4469:5121" ph="{...}" />
+            <marker date="1516264140725" expanded="false" signature="5194:5451" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="95" column="68" lean-forward="true" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
