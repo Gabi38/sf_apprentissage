@@ -90,8 +90,11 @@
         </div>
         <br/><br/><br/>
 
+        {% if is_granted('ROLE_ADMIN') %}
+            Compte : <p>Username: {{ app.user.username }}</p>
         <a href=" {{ path('galerie_add') }}">Ajouter une nouvelle galerie</a><br/>
         <a href=" {{ path('galeriecategorie_manager') }}">Gestion des catégories</a><br/><br/>
+        {% endif %}
 
         <a href=" {{ path('accueil') }}">Retour à l'accueil</a><br/>
 

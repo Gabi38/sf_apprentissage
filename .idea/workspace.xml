@@ -18,7 +18,7 @@
       <file leaf-file-name="GalerieController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="-543">
               <caret line="38" column="92" lean-forward="false" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
               <folding>
                 <marker date="1516264140725" expanded="true" signature="1404:1441" ph="SELECT a FRO... GalerieBundle" />
@@ -29,6 +29,38 @@
                 <marker date="1516264140725" expanded="false" signature="4469:5121" ph="{...}" />
                 <marker date="1516264140725" expanded="false" signature="5194:5451" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/PageBasiqueBundle/Controller/PageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="35" column="86" lean-forward="false" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+              <folding>
+                <element signature="e#48#107#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="security.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="20" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,16 +85,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategorieType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/CategorieType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GalerieType.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Form/GalerieType.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,94 +95,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Galerie.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Entity/Galerie.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="335" column="0" lean-forward="false" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#72#0#PHP" expanded="true" />
-                <marker date="1516263409819" expanded="true" signature="1754:1906" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="1915:1961" ph=" Get id ..." />
-                <marker date="1516263409819" expanded="true" signature="1991:2029" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2038:2133" ph=" Set created ..." />
-                <marker date="1516263409819" expanded="true" signature="2176:2246" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2255:2312" ph=" Get created ..." />
-                <marker date="1516263409819" expanded="true" signature="2347:2390" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2399:2494" ph=" Set changed ..." />
-                <marker date="1516263409819" expanded="true" signature="2537:2607" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2616:2673" ph=" Get changed ..." />
-                <marker date="1516263409819" expanded="true" signature="2708:2751" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2757:2781" ph=" @ORM\PreUpdate() ..." />
-                <marker date="1516263409819" expanded="true" signature="2813:2855" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="2864:2952" ph=" Set title ..." />
-                <marker date="1516263409819" expanded="true" signature="2991:3057" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3066:3118" ph=" Get title ..." />
-                <marker date="1516263409819" expanded="true" signature="3151:3192" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3201:3287" ph=" Set slug ..." />
-                <marker date="1516263409819" expanded="true" signature="3324:3388" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3397:3448" ph=" Get slug ..." />
-                <marker date="1516263409819" expanded="true" signature="3480:3520" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3526:3572" ph=" @ORM\PrePersist() ..." />
-                <marker date="1516263409819" expanded="true" signature="3601:3684" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3690:3793" ph=" Set categorie ..." />
-                <marker date="1516263409819" expanded="true" signature="3876:3931" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="3936:4005" ph=" Get categorie ..." />
-                <marker date="1516263409819" expanded="true" signature="4039:4072" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4110:4168" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4174:4265" ph=" Add image ..." />
-                <marker date="1516263409819" expanded="true" signature="4329:4380" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4386:4456" ph=" Remove image ..." />
-                <marker date="1516263409819" expanded="true" signature="4523:4569" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4575:4649" ph=" Get images ..." />
-                <marker date="1516263409819" expanded="true" signature="4680:4710" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4716:4825" ph=" Add commentaire ..." />
-                <marker date="1516263409819" expanded="true" signature="4907:4970" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="4976:5064" ph=" Remove commentaire ..." />
-                <marker date="1516263409819" expanded="true" signature="5149:5207" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="5213:5293" ph=" Get commentaires ..." />
-                <marker date="1516263409819" expanded="true" signature="5330:5366" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="5372:5394" ph=" @return string ..." />
-                <marker date="1516263409819" expanded="true" signature="5423:5451" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="5457:5484" ph=" @param string $etat ..." />
-                <marker date="1516263409819" expanded="true" signature="5518:5547" ph="{...}" />
-                <marker date="1516263409819" expanded="true" signature="5553:5595" ph=" Retourne 1 si actif 0 si pas actif ..." />
-                <marker date="1516263409819" expanded="true" signature="5629:5680" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manager.html.twig" pinned="false" current-in-tab="true">
+      <file leaf-file-name="manager.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="95" column="68" lean-forward="true" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
+            <state relative-caret-position="508">
+              <caret line="93" column="61" lean-forward="false" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="63" lean-forward="false" selection-start-line="12" selection-start-column="63" selection-end-line="12" selection-end-column="63" />
-              <folding>
-                <element signature="e#361#934#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -169,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>neme</find>
-      <find>setFile</find>
       <find>Entity</find>
       <find>2</find>
       <find>nom</find>
@@ -198,16 +138,14 @@
       <find>Commentaire</find>
       <find>isActive</find>
       <find>setEtat</find>
+      <find>secured_area</find>
+      <find>cookier</find>
       <find>$query</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../Stepup_Intranet/include/script_pass_user.php" />
-        <option value="$USER_HOME$/Downloads/Stepup_Intranet/include/script_pass_user.php" />
-        <option value="$PROJECT_DIR$/src/GalerieBundle/Controller/CategorieController.php" />
-        <option value="$PROJECT_DIR$/../Stepup_Intranet/cron/script_pass_user.php" />
         <option value="$USER_HOME$/Desktop/config.php" />
         <option value="$USER_HOME$/Desktop/addToken.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
@@ -254,7 +192,11 @@
         <option value="$PROJECT_DIR$/web/script.js" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php" />
+        <option value="$PROJECT_DIR$/src/PageBasiqueBundle/Controller/PageController.php" />
         <option value="$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$USER_HOME$/Desktop/html.tpl.php" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
       </list>
     </option>
   </component>
@@ -344,7 +286,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
+              <option name="myItemId" value="PageBasiqueBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -362,129 +304,43 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Form" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="galerie_sf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GalerieBundle" />
+              <option name="myItemId" value="PageBasiqueBundle" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="galerie_sf" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,12 +433,12 @@
       <workItem from="1513861868875" duration="20282000" />
       <workItem from="1515055566433" duration="31157000" />
       <workItem from="1515399325949" duration="3230000" />
-      <workItem from="1515426173883" duration="108169000" />
+      <workItem from="1515426173883" duration="114582000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162838000" />
+    <option name="totallyTimeSpent" value="169251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -641,56 +497,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Nemera/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Backup_src.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="51" column="15" lean-forward="false" selection-start-line="51" selection-start-column="14" selection-end-line="51" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Simtech Corys Event Quizz - Sondage - 12_01_18/lib/app/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/add.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/collection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="51" column="97" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/lightbox2-master/lightbox2-master/dist/js/lightbox-plus-jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140">
-          <caret line="13" column="346" lean-forward="false" selection-start-line="13" selection-start-column="346" selection-end-line="13" selection-end-column="346" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/lightbox2-master/lightbox2-master/dist/js/lightbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1297,9 +1103,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Controller/GalerieController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="-543">
           <caret line="38" column="92" lean-forward="false" selection-start-line="38" selection-start-column="92" selection-end-line="38" selection-end-column="92" />
           <folding>
             <marker date="1516264140725" expanded="true" signature="1404:1441" ph="SELECT a FRO... GalerieBundle" />
@@ -1313,21 +1127,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Repository/GalerieRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/PageBasiqueBundle/Controller/PageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="48" lean-forward="false" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="680">
+          <caret line="35" column="86" lean-forward="false" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
+          <folding>
+            <element signature="e#48#107#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GalerieBundle/Resources/views/manager.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="95" column="68" lean-forward="true" selection-start-line="95" selection-start-column="68" selection-end-line="95" selection-end-column="68" />
+        <state relative-caret-position="508">
+          <caret line="93" column="61" lean-forward="false" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#div#0;n#td#4;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/region--bottom.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/region--footer.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/html.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="20" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

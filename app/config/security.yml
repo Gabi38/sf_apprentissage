@@ -5,9 +5,21 @@ security:
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
-            memory: ~
+            memory:
+                users:
+                    gabriel:
+                        password: gabriel
+                        roles: 'ROLE_USER'
+                    admin:
+                        password: admin
+                        roles: 'ROLE_ADMIN'
 
     firewalls:
+#        secured_area:
+#            logout:
+#                path: /logout
+#                target: /login
+
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
@@ -18,7 +30,14 @@ security:
             # activate different ways to authenticate
 
             # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
+            http_basic: ~
 
             # https://symfony.com/doc/current/security/form_login_setup.html
             #form_login: ~
+
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/admin, roles: ROLE_ADMIN }
+
+    encoders:
+        Symfony\Component\Security\Core\User\User: plaintext

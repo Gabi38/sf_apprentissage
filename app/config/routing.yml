@@ -9,3 +9,10 @@ galerie:
 pagebasique:
     resource: "@PageBasiqueBundle/Resources/config/routing.yml"
     prefix:   /
+
+admin:
+    resource: "@PageBasiqueBundle/Controller/PageController.php"
+    type:     annotation
+
+logout:
+    path: /logout
